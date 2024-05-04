@@ -1,0 +1,19 @@
+# pandas-project#pandas
+import pandas as pd
+data={'name':['alice','bob','scott','bunny','shetty'],
+      'age':[22,45,55,30,18],
+      'city':['new york','loas angles','paris','germany','u.s.a']
+}
+
+df=pd.DataFrame(data)
+print(df)
+
+#cleaned_data=df.dropna()
+print(' ')
+#print(cleaned_data)
+
+print(df.isnull().sum())
+#print(df.head())
+#print(df.info())
+print('Descriptive statistics:')
+print(df.describe())
